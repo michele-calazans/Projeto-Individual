@@ -1,0 +1,83 @@
+.header{
+    height: 100px;
+    width: 100%;
+}
+
+.header img{
+    height: 130px;
+    margin: 0 0 0 95px;
+    float: left;
+}
+
+.header h2{
+  margin-top: 65px;
+  margin-left: 15px;
+  font-size: 20px;
+  float: left;
+  font-weight: 400;
+  color: #F0F3F4;
+}
+
+.header button{
+    height: 55px;
+    width: 20%;
+    background-color: rgb(116, 146, 5);
+    border-style: none;
+    color: #ffffff;
+    margin: 42px 0 0 425px;
+    border-radius: 5px;
+    font: 600 16px DM Mono, monospace;
+}
+
+#logout{
+    float: right;
+    height: 35px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    padding: 5px 5px 5px 5px;
+    border-color: rgb(116, 146, 5);
+    margin: 45px 115px 0 0;
+}
+
+.card{
+    display: inline-block;
+    width: 45%;
+    height: 290px;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.card img{
+    float: right;
+    height: 290px;
+}
+
+.card h4{
+    margin: 13px 0;
+    font: 600 14px DM Mono, monospace;
+}
+
+.caixa-titulo{
+    height: 42px;
+    width: 70%;
+    padding-top: 15px;
+    background-color: rgb(116, 146, 5);
+}
+
+.util{
+    float: left;
+    height: 40px;
+    width: 58.6%;
+}
+
+.util img{
+    float: right;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
