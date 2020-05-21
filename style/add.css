@@ -1,11 +1,11 @@
 .container-cad{
     width: 80%;
     height: 600px;
-    margin: auto;
     margin-top: 20px;
-    border-radius: 10px;
-    padding: 20px 0 0 0;
-    background-color: rgb(65, 82, 6);
+    text-align: left;
+    background-color: rgb(56, 70, 6);
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    /* background-color: rgb(65, 82, 6); */
 }
 
 .a-back object{
@@ -26,7 +26,7 @@
 .left{
     width: 35%;
     float: left;
-    padding: 50px 0 0 55px;
+    padding: 30px 0 0 55px;
 }
 
 .left p{
@@ -46,7 +46,7 @@
 }
 
 .form-class input{
-    height: 40px;
+    height: 41px;
     width: 85%;
     float: center;
     margin-top: 8px;
@@ -69,7 +69,7 @@
 }
 
 #button_cancell{
-    background-color: #C3073F;
+    background-color: rgb(245, 101, 49);
 }
 
 #input_photo{

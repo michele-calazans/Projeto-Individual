@@ -1,0 +1,37 @@
+.container-log{
+    width: 80%;
+    height: 500px;
+    margin-top: 85px;
+    text-align: left;
+    padding-top: 0;
+    background-color: rgb(56, 70, 6);
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+}
+
+.form-class{
+    margin:  145px 0 0 10px;
+    width: 45%;
+}
+
+
+.form-class input{
+    margin-bottom: 10px;
+}
+
+
+.form-class h1{
+    margin-bottom: 15px;
+}
+
+
+.logo-login img{
+    height: 500px;
+    margin: 0 0 0 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.left{
+    padding:  0 0 0 0;
+}
