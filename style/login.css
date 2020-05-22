@@ -8,8 +8,13 @@
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
 }
 
+.logo-img img{
+    height: 140px;
+    margin: 10px 0 0 510px;
+}
+
 .form-class{
-    margin:  145px 0 0 10px;
+    margin:  5px 0 0 10px;
     width: 45%;
 }
 
