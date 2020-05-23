@@ -21,7 +21,7 @@
 .header button{
     height: 55px;
     width: 20%;
-    background-color: rgb(116, 146, 5);
+    background-color: rgb(192, 12, 39);
     border-style: none;
     color: #ffffff;
     margin: 42px 0 0 425px;
@@ -36,7 +36,7 @@
     border-radius: 3px;
     border-width: 2px;
     padding: 5px 5px 5px 5px;
-    border-color: rgb(116, 146, 5);
+    border-color: rgb(192, 12, 39);
     margin: 45px 115px 0 0;
 }
 
@@ -47,7 +47,7 @@
     margin: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #F7F4E9;
     color: black;
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
 }
@@ -66,7 +66,7 @@
     height: 47px;
     width: 70%;
     padding-top: 10px;
-    background-color: rgb(116, 146, 5);
+    background-color: rgb(192, 12, 39);
 }
 
 .util{
