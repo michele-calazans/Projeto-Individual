@@ -1,0 +1,91 @@
+/* body {
+    background-image: url('../imgs/wallpp/fin.jpg');
+    /* height: 500px; You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+} */
+
+a{
+    font-size: 18px;
+    color: rgb(240, 25, 57);
+}
+
+.header {
+    height: 70px;
+    width: 80%;
+    color: #F0F3F4;
+    font-size: 24px;
+    margin-top: 45px;
+    padding-left: 180px;
+}
+
+.header h3{
+    margin: 0;
+    float: left;
+}
+
+
+.buttons{
+    float: right;
+    margin-right: 100px;
+}
+.buttons img{
+    height: 25px;
+    float: left;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.buttons label{
+    margin-top: 10px;
+}
+
+.container-dashboard{
+    width: 70%;
+    height: 500px;
+    margin: 30px 0 0 135px;
+    padding-left: 10px;
+    background-color: rgb(189, 14, 40);
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    /* background-color: rgb(65, 82, 6); */
+}
+
+.div-center{
+    margin-left: 180px;
+    margin-top: 10px;
+}
+
+.card{
+    display: inline-block;
+    width: 42%;
+    height: 250px;
+    margin-top: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+}
+
+.card h2{
+    margin-top: 15px;
+    color: rgb(250, 248, 235);
+}
+    .c_um{
+        background-color: #3CBCC3;
+    }
+
+    .c_dois{
+        background-color: #EBA63F;
+    }
+
+    .c_tres{
+        background-color: #E40C2B;
+    }
+
+    .c_quatro{
+        background-color: #438945;
+    }
+
+.card img{
+    height: 110px;
+    margin-top: 10px;
+}

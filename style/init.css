@@ -24,20 +24,25 @@
     background-color: rgb(192, 12, 39);
     border-style: none;
     color: #ffffff;
-    margin: 42px 0 0 425px;
+    margin: 42px 10px 0 355px;
     border-radius: 5px;
     font: 600 16px DM Mono, monospace;
 }
 
-#logout{
+
+.botao_p{
     float: right;
+    margin: 40px 110px 0 0;
+}
+
+.botao_p img{
     height: 35px;
     border-style: solid;
     border-radius: 3px;
     border-width: 2px;
     padding: 5px 5px 5px 5px;
     border-color: rgb(192, 12, 39);
-    margin: 45px 115px 0 0;
+    margin: 5px 5px 0 5px;
 }
 
 .card{
@@ -64,7 +69,7 @@
 
 .caixa-titulo{
     height: 47px;
-    width: 70%;
+    width: 59%;
     padding-top: 10px;
     background-color: rgb(192, 12, 39);
 }
