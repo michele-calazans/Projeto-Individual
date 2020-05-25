@@ -1,34 +1,27 @@
-/* body {
-    background-image: url('../imgs/wallpp/fin.jpg');
-    /* height: 500px; You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-} */
-
-a{
+ a{
     font-size: 18px;
     color: rgb(240, 25, 57);
 }
 
-.header {
-    height: 70px;
+.header{
+    height: 80px;
     width: 80%;
     color: #F0F3F4;
     font-size: 24px;
-    margin-top: 45px;
     padding-left: 180px;
 }
 
 .header h3{
     margin: 0;
     float: left;
+    margin: 35px 0 0 65px;
 }
 
 
 .buttons{
     float: right;
-    margin-right: 100px;
+    margin-top: 40px;
+    margin-right: 60px;
 }
 .buttons img{
     height: 25px;
@@ -52,15 +45,17 @@ a{
 }
 
 .div-center{
-    margin-left: 180px;
-    margin-top: 10px;
+    margin-left: 200px;
+    margin-top: 25px;
 }
 
 .card{
     display: inline-block;
     width: 42%;
     height: 250px;
+    margin-right: 5px;
     margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
 }
@@ -88,4 +83,9 @@ a{
 .card img{
     height: 110px;
     margin-top: 10px;
+}
+
+.ilustrate img{
+    height: 570px;
+    float: left;
 }
