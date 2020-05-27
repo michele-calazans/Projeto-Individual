@@ -40,6 +40,7 @@ h1{
     color: #ffffff;
 }
 
+/* Container */
 .container{
     text-align: center;
     width: 90%;
@@ -51,10 +52,22 @@ h1{
 
 
 .container h2{
-    color: #F0F3F4;
+    color: rgb(226, 227, 228);
     font-size: 28px; 
     text-align: left;
     margin: 65px 0 25px 55px;
+}
+
+/* Link de "voltar" */
+.a-back a{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(223, 223, 230);
+}
+
+.a-back object{
+    height: 18px;
+    margin-right: 15px;
 }
 
 /* 

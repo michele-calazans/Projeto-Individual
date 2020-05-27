@@ -1,3 +1,4 @@
+/* Div container */
 .container-log{
     width: 80%;
     height: 500px;
@@ -8,11 +9,13 @@
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
 }
 
+/* Imagem grande de ilustração */
 .logo-img img{
     height: 140px;
     margin: 10px 0 0 510px;
 }
 
+/* Div formulario */
 .form-class{
     margin:  5px 0 0 10px;
     width: 45%;
@@ -29,13 +32,13 @@
 }
 
 
+/* Imagem logo da direita */
 .logo-login img{
     height: 500px;
     margin: 0 0 0 0;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-
 
 .left{
     padding:  0 0 0 0;

@@ -1,3 +1,4 @@
+/* Div central */
 .container-cad{
     width: 80%;
     height: 600px;
@@ -8,22 +9,14 @@
     /* background-color: rgb(65, 82, 6); */
 }
 
-.a-back object{
-    height: 18px;
-    margin-right: 15px;
-}
 
-.a-back a{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(234, 234, 240);
-}
-
+/* Logo da esquerda*/
 .logo-cad img{
     height: 300px;
     margin: 110px 0 0 40px;
 }
 
+/* Div da esquerda do container e suas configurações - Início */
 .left{
     width: 35%;
     float: left;
@@ -39,18 +32,32 @@
 .left h1{
     font-size: 30px;
 }
+/* Div da esquerda do container - Fim */
 
+/* Formulário da direita do container e suas configurções - Início */
 .form-class{
     width: 50%;
     float: right;
     padding-left: 20px;
+    margin-top: 20PX
 }
 
 .form-class input{
     height: 41px;
     width: 85%;
     float: center;
-    margin-top: 8px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-style: none;
+    outline-style: none;
+}
+
+.form-class select{
+    height: 41px;
+    width: 44%;
+    float: center;
+    margin-top: 10px;
     padding-left: 20px;
     border-radius: 8px;
     border-style: none;
@@ -80,3 +87,4 @@
     border-width: 5px;
     border-color:rgb(226, 33, 62);
 }
+/* Formulário - Fim */

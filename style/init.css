@@ -1,16 +1,16 @@
+/* Div Header */
 .header{
-    height: 100px;
     width: 100%;
 }
 
 .header img{
     height: 130px;
-    margin: 0 0 0 95px;
+    margin: 10px 0 0 95px;
     float: left;
 }
 
 .header h2{
-  margin-top: 65px;
+  margin-top: 75px;
   margin-left: 15px;
   font-size: 20px;
   float: left;
@@ -18,18 +18,18 @@
   color: #F0F3F4;
 }
 
-.header button{
+button{
     height: 55px;
     width: 20%;
     background-color: rgb(192, 12, 39);
     border-style: none;
     color: #ffffff;
-    margin: 42px 10px 0 355px;
+    margin: 55px 10px 0 425px;
     border-radius: 5px;
     font: 600 16px DM Mono, monospace;
 }
 
-
+/* Botão personalizado do header */
 .botao_p{
     float: right;
     margin: 40px 110px 0 0;
@@ -42,9 +42,10 @@
     border-width: 2px;
     padding: 5px 5px 5px 5px;
     border-color: rgb(192, 12, 39);
-    margin: 5px 5px 0 5px;
+    margin: 17px 5px 0 5px;
 }
 
+/* Div card */
 .card{
     display: inline-block;
     width: 45%;
@@ -67,13 +68,15 @@
     font: 600 14px DM Mono, monospace;
 }
 
+/* Caixa título(nome do atleta) */
 .caixa-titulo{
     height: 47px;
-    width: 59%;
+    width: 62%;
     padding-top: 10px;
     background-color: rgb(192, 12, 39);
 }
 
+/* Utilidades(editar-excluir) */
 .util{
     float: left;
     height: 40px;
