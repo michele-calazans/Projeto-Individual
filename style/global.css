@@ -5,7 +5,7 @@
 body {
     margin: 0;
     background-color:  rgb(39, 39, 54);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x:hidden;
 }
   
@@ -73,6 +73,14 @@ h1{
 .a-back object{
     height: 18px;
     margin-right: 15px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+} 
+  
+body::-webkit-scrollbar-thumb {   
+background-color: rgb(151, 148, 148);   
 }
 
 /* 

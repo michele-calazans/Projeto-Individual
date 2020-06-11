@@ -10,9 +10,10 @@
 }
 
 .header h2{
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 15px;
-    font: 600 14px DM Mono, monospace;
+    font-weight: 600;
+    font-size: 20px;
     float: left;
     color: #F0F3F4;
 }
@@ -22,7 +23,7 @@
     height: 35px;
     display: flex;
     border-style: none;
-    margin: 25px 0 15px 50px;
+    margin: 35px 0 15px 50px;
     font-size: 16px;
     color: #ffffff;
     border-bottom-width: 5px;
@@ -75,6 +76,7 @@ button{
     border-radius: 5px;
     border: solid 1px rgb(192, 12, 39);
     color: #8B9CA5;
+    font-family: 'Roboto', sans-serif;;
 }
 
 .card ul{
@@ -115,6 +117,6 @@ button{
     font-size: 12px;
     float: left;
     margin: 0 0 0 5px;
-    background-color: rgb(115, 115, 136);
+    background-color: rgb(71, 71, 93);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
