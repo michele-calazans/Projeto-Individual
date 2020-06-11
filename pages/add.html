@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/add.css">
+    <link rel="stylesheet" href="../style/add-alter.css">
+    <link rel="stylesheet" href="../responsive/resp-add-alter.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Team</title>
+    <!-- CSS -->
+
+    <!-- JS -->
+    <script src="../js/validacoes.js"></script>
+    <!-- JS -->
+
+    <title>Dream Team - Cadastro</title>
 </head>
 <body>
     <div class="main">
@@ -16,16 +24,16 @@
                     <p>Cadastre os seus jogadores favoritos e forme o seu time dos sonhos.</p>
                         <div class="a-back">
                             <a href="../pages/init.html" >
-                                <object data="../imgs//icons/left-arrow.svg" type="image/svg+xml"></object>Voltar a tela de início
+                                <object data="../imgs/icons/left-arrow.svg" type="image/svg+xml"></object>Voltar a tela de início
                             </a>
                         </div>
 
                         <div class="logo-cad">
-                            <img src="../imgs/logo_of.png" alt="">
+                            <img src="../imgs/logo/logo_of.png" alt="">
                         </div>
             </div>
 
-            <form action="" class="form-class">
+            <form class="form-class" onsubmit="valida_atleta()">
                 <input type="file" id="input_photo"/>
                 <input type="text" id="id_nome" placeholder="Nome do atleta" required/>
                 <input type="number" id="id_idade" placeholder="Idade" required/>
@@ -33,7 +41,7 @@
                 <input type="text" id="id_clube" placeholder="Clube" required/>
                 <input type="text" id="id_selecao" placeholder="Seleção" required/>
 
-                <select name="" id="">
+                <select name="ranking" id="ranking">
                     <option value="" selected disabled>Nota</option>
                     <option value="rank_1">Nota 1</option>
                     <option value="rank_2">Nota 2</option>
@@ -47,7 +55,7 @@
                     <option value="rank_10">Nota 10</option>
                 </select>
 
-                <select name="posicao" id="select_position">
+                <select name="position" id="position">
                     <option value="" selected disabled>Posição</option>
                     <option value="p_oposto">Oposto(a)</option>
                     <option value="p_levantador">Levantador(a)</option>
@@ -56,7 +64,7 @@
                     <option value="p_central">Central</option>
                 </select>
 
-                <button id="button_cad" type="submit">Cadastrar</button>
+                <button id="button_cad" type="submit" onclick="envia_dados()">Cadastrar</button>
                 <button class="button_cancell" id="button_cancell" type="submit">Cancelar</button>
             </form>
         </div>

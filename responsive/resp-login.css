@@ -1,0 +1,174 @@
+/* Login */
+@media screen and (min-width: 0px) and (max-width:320px)
+{
+   
+    .container-log{
+        width: 90%;
+        height: 520px;
+        margin-top: 25px;
+    }
+
+    .logo-img img{
+        height: 130px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-login img{
+        width: 0px;
+    }
+
+    .logo-login{
+        width: 0px;
+        height: 0px;
+    }
+
+    .form-class{
+        margin:  0 auto;
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+    }
+
+    .left{
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:375px)
+{
+   
+    .container-log{
+        width: 90%;
+        height: 620px;
+        margin-top: 25px;
+    }
+
+    .logo-img img{
+        height: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-login img{
+        width: 0px;
+    }
+
+    .logo-login{
+        width: 0px;
+        height: 0px;
+    }
+
+    .form-class{
+        margin:  0 auto;
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+    }
+
+    .left{
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 414px)
+{
+   
+    .container-log{
+        width: 90%;
+        height: 680px;
+        margin-top: 25px;
+    }
+
+    .logo-img img{
+        height: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-login img{
+        width: 0px;
+    }
+
+    .logo-login{
+        width: 0px;
+        height: 0px;
+    }
+
+    .form-class{
+        margin:  0 auto;
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+    }
+
+    .form-class input{
+        font-size: 16px;
+    }
+
+    .form-class button{
+        font-size: 16px;
+    }
+
+    .form-class h1{
+        font-size: 32px;
+    }
+
+    .left{
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px)
+{
+   
+    .container-log{
+        width: 90%;
+        height:  750px;
+        margin-top: 25px;
+    }
+
+    .logo-img img{
+        height: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-login img{
+        width: 0px;
+    }
+
+    .logo-login{
+        width: 0px;
+        height: 0px;
+    }
+
+    .form-class{
+        margin:  0 auto;
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+    }
+
+    .form-class input{
+        font-size: 16px;
+    }
+
+    .form-class button{
+        font-size: 16px;
+    }
+
+    .form-class h1{
+        font-size: 32px;
+    }
+
+    .left{
+        width: 0;
+    }
+}
+/* ========================================================================================= Login */

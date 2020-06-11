@@ -2,104 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--CSS -->
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/init.css">
+    <link rel="stylesheet" href="../responsive/resp-init.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../js/pesquisa_aproximada.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Team</title>
+    <title>Dream Team - Home</title>
 </head>
 <body>
     <nav class="header">
-        <img src="../imgs/logo_of.png" alt="Logo Dream Team">
+        <img src="../imgs/Logo/logo_of.png" alt="">
         
-        <h2>Bem vinda, Michele</h2>
-
-        <button>Cadastrar novo jogador</button>
+        <h2>Bem vinda, Michele.</h2>
 
         <div class="botao_p">
-            <a href="../pages/dashboard.html"><img src="../imgs/icons/heart.svg" alt="Botão de pesquisa" id="search"></a>
-            <a href="../pages/login.html"><img src="../imgs/icons/logout.png" alt="Botão de logout" id="logout"></a>
+            <button class="resp-button">Cadastrar novo jogador</button>
+            <div class="resp-a">
+                <a href="../pages/dashboard.html"><img src="../imgs/icons/heart.svg" alt="Botão de pesquisa" id="search"></a>
+                <a href="../pages/login.html"><img src="../imgs/icons/logout.png" alt="Botão de logout" id="logout"></a>
+            </div>
         </div>
     </nav>
 
     <div class="main">
-        <div class="container">
+        <div class="container" id="container">
             <h2>Jogadores cadastrados</h2>
+            <input type="text" id="pesquisa" onkeyup="myFunction()" class="input_pesquisa" placeholder="🔎 Pesquisar jogador(a)">
             <div class="card">
-                <div class="util">
-                    <a href=""><img src="../imgs/icons/delete.svg" alt=""></a>
-                    <a href=""><img src="../imgs/icons/pencil.svg" alt=""></a>
-                </div>
-                <img src="../imgs/gabi.jpg" alt="">
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/mireya.jpg" alt="">
+
+                <h1><span>Mireya Luis</span></h1>
+
                 <ul>
-                    <li><h4> Idade:  26 ANOS</h4></li>
-                    <li><h4> NacionalIdade: BRASILEIRA</h4></li>
-                    <li><h4> Posição: PONTEIRA</h4></li>
-                    <li><h4> Clube:VAKIFBANK</h4></li>
-                    <li><h4> Seleção: BRASIL</h4></li>
-                    <li><h4> Meu Ranking: 9</h4></li>
+                    <li> Idade:   52 ANOS</li>
+                    <li> NacionalIdade: CUBANA</li>
+                    <li> Posição: PONTEIRA</li>
                 </ul>
-                <div class="caixa-titulo">
-                    <h1>Gabi Guimarães</h1>
+
+                <ul> 
+                    <li> Clube: Nenhum</li>
+                    <li> Seleção: CUBA</li>
+                    <li> Meu Ranking: 10</li>
+                </ul>
+
+                <div class="edita_exclui">
+                    <button>Editar</button>
+                    <button class="exclui">Excluir</button>
                 </div>
             </div>
 
             <div class="card">
-                <div class="util">
-                    <a href=""><img src="../imgs/icons/delete.svg" alt=""></a>
-                    <a href=""><img src="../imgs/icons/pencil.svg" alt=""></a>
-                </div>
-                <img src="../imgs/perfils/leal.jpg" alt="">
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/nishida.jpg" alt="">
+                <h1><span>Yuji Nishida</span></h1>
+
                 <ul>
-                    <li><h4> Idade: 31 ANOS</h4></li>
-                    <li><h4> NacionalIdade: CUBANO/BRASILEIRO</h4></li>
-                    <li><h4> Posição: PONTEIRO</h4></li>
-                    <li><h4> Clube: LUBE</h4></li>
-                    <li><h4> Seleção: BRASIL</h4></li>
-                    <li><h4> Meu Ranking: 10</h4></li>
+                    <li> Idade: 20 ANOS </li>
+                    <li> NacionalIdade: JAPÔNES </li>
+                    <li> Posição: OPOSTO </li>
                 </ul>
-                <div class="caixa-titulo">
-                    <h1>Yoandi Leal</h1>
+
+                <ul>
+                    <li> Clube: J-TEKT STINGS </li>
+                    <li> Seleção: JAPONESA </li>
+                    <li> Meu Ranking: 8 </li>
+                </ul>
+
+                <div class="edita_exclui">
+                    <button>Editar</button>
+                    <button class="exclui">Excluir</button>
                 </div>
             </div>
 
             <div class="card">
-                <div class="util">
-                    <a href=""><img src="../imgs/icons/delete.svg" alt=""></a>
-                    <a href=""><img src="../imgs/icons/pencil.svg" alt=""></a>
-                </div>
-                <img src="../imgs/perfils/nishida.jpg" alt="">
-                <ul>
-                    <li><h4> Idade: 20 ANOS</h4></li>
-                    <li><h4> NacionalIdade: JAPÔNES</h4></li>
-                    <li><h4> Posição: OPOSTO</h4></li>
-                    <li><h4> Clube: J-TEKT STINGS</h4></li>
-                    <li><h4> Seleção: JAPONESA</h4></li>
-                    <li><h4> Meu Ranking: 8</h4></li>
-                </ul>
-                <div class="caixa-titulo">
-                    <h1>Yuji Nishida</h1>
-                </div>
+                
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/leal.jpg" alt="">
+
+                <h1><span>Yoandi Leal</span></h1>
+
+                    <ul class="ul_class">
+                        <li> Idade: 31 ANOS </li>
+                        <li> NacionalIdade: BRASILEIRO </li>
+                        <li> Posição: PONTEIRO </li>
+                    </ul>
+
+                    <ul>
+                        <li> Clube: LUBE </li>
+                        <li> Seleção: BRASIL </li>
+                        <li> Meu Ranking: 10 </li>
+                    </ul>
+                       
+
+                    <div class="edita_exclui">
+                        <button>Editar</button>
+                        <button class="exclui">Excluir</button>
+                    </div>
             </div>
+
 
 
             <div class="card">
-                <div class="util">
-                    <a href=""><img src="../imgs/icons/delete.svg" alt=""></a>
-                    <a href=""><img src="../imgs/icons/pencil.svg" alt=""></a>
-                </div>
-                <img src="../imgs/gabi.jpg" alt="">
-                <ul>
-                    <li><h4> Idade: 25 ANOS</h4></li>
-                    <li><h4> NacionalIdade: BRASILEIRA</h4></li>
-                    <li><h4> Posição: PONTEIRA</h4></li>
-                    <li><h4> Clube: VAKIFBANK</h4></li>
-                    <li><h4> Seleção: BRASILEIRA</h4></li>
-                    <li><h4> Meu Ranking: 5</h4></li>
-                </ul>
-                <div class="caixa-titulo">
-                    <h1>Gabi Guimarães</h1>
-                </div>
+                
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/leal.jpg" alt="">
+
+                <h1><span>Yoandi Leal</span></h1>
+
+                    <ul class="ul_class">
+                        <li> Idade: 31 ANOS </li>
+                        <li> NacionalIdade: BRASILEIRO </li>
+                        <li> Posição: PONTEIRO </li>
+                    </ul>
+
+                    <ul>
+                        <li> Clube: LUBE </li>
+                        <li> Seleção: BRASIL </li>
+                        <li> Meu Ranking: 10 </li>
+                    </ul>
+                       
+
+                    <div class="edita_exclui">
+                        <button>Editar</button>
+                        <button class="exclui">Excluir</button>
+                    </div>
             </div>
+
+            <div class="card">
+                
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/leal.jpg" alt="">
+
+                <h1><span>Yoandi Leal</span></h1>
+
+                    <ul class="ul_class">
+                        <li> Idade: 31 ANOS </li>
+                        <li> NacionalIdade: BRASILEIRO </li>
+                        <li> Posição: PONTEIRO </li>
+                    </ul>
+
+                    <ul>
+                        <li> Clube: LUBE </li>
+                        <li> Seleção: BRASIL </li>
+                        <li> Meu Ranking: 10 </li>
+                    </ul>
+                       
+
+                    <div class="edita_exclui">
+                        <button>Editar</button>
+                        <button class="exclui">Excluir</button>
+                    </div>
+            </div>
+
+
+
+            <div class="card">
+                
+                <img src="C:/Users/mi1/Desktop/Perfil-Jogador - Cópia/leal.jpg" alt="">
+
+                <h1><span>Yoandi Leal</span></h1>
+
+                    <ul class="ul_class">
+                        <li> Idade: 31 ANOS </li>
+                        <li> NacionalIdade: BRASILEIRO </li>
+                        <li> Posição: PONTEIRO </li>
+                    </ul>
+
+                    <ul>
+                        <li> Clube: LUBE </li>
+                        <li> Seleção: BRASIL </li>
+                        <li> Meu Ranking: 10 </li>
+                    </ul>
+                       
+
+                    <div class="edita_exclui">
+                        <button>Editar</button>
+                        <button class="exclui">Excluir</button>
+                    </div>
+            </div>
+
         </div>
     </div>
 </body>

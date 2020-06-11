@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--  CSS -->
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/add-alter.css">
     <link rel="stylesheet" href="../style/login.css">
     <link rel="stylesheet" href="../responsive/resp-login.css">
+
+    <!-- JS -->
+    <script src="../js/validacoes.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Team - Login</title>
+    <title>Dream Team - Cadastro</title>
 </head>
 <body>
     <div class="main">
@@ -15,7 +19,7 @@
 
             <div class="left">
                     <div class="logo-login">
-                            <img src="../imgs/wallpp/female.jpg" alt="">
+                        <img src="../imgs/wallpp/male.jpg" alt="">
                     </div>
             </div>
 
@@ -23,13 +27,17 @@
                 <img src="../imgs/Logo/logo_of.png" alt="">
             </div>
             
-            <form action="" class="form-class">
-                <h1>Faça seu login</h1>
-                <input type="text" id="id_user" placeholder="Usuário" required/>
+            <form class="form-class" onsubmit="valida_cadastro()">
+                <h1>Faça seu cadastro</h1>
+                <ul id="ul_valida" class="valida">
+
+                </ul>
+                <input type="text" id="id_user" placeholder="Nome de usuário" required/>
                 <input type="password" id="id_pass" placeholder="Senha" required/>
+                <input type="password" id="id_pass_confirm" placeholder="Confirmar senha" required/>
        
-                <button id="button_login" type="submit">Entrar</button>
-                <a href="../pages/add-user.html">Não possui cadastro?</a>
+                <button id="button_login" type="submit" onclick="envia_add_user()">Cadastrar</button>
+                <a href="../pages/login.html">Já possui uma conta?</a>
             </form>
         </div>
     </div>

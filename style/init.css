@@ -10,29 +10,49 @@
 }
 
 .header h2{
-  margin-top: 75px;
-  margin-left: 15px;
-  font-size: 20px;
-  float: left;
-  font-weight: 400;
-  color: #F0F3F4;
+    margin-top: 75px;
+    margin-left: 15px;
+    font: 600 14px DM Mono, monospace;
+    float: left;
+    color: #F0F3F4;
 }
 
-button{
-    height: 55px;
-    width: 20%;
-    background-color: rgb(192, 12, 39);
+.input_pesquisa{
+    width: 50%;
+    height: 35px;
+    display: flex;
     border-style: none;
+    margin: 25px 0 15px 50px;
+    font-size: 16px;
     color: #ffffff;
-    margin: 55px 10px 0 425px;
-    border-radius: 5px;
-    font: 600 16px DM Mono, monospace;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(192, 12, 39);
+    background-color: rgb(39, 39, 54);
+}
+
+::-webkit-input-placeholder {
+    color: #F0F3F4;
 }
 
 /* Botão personalizado do header */
 .botao_p{
     float: right;
-    margin: 40px 110px 0 0;
+    width: 60%;
+    margin: 40px 80px 0 0;
+} 
+
+button{
+    height: 55px;
+    width: 28%;
+    background-color: rgb(192, 12, 39);
+    border-style: none;
+    color: #ffffff;
+    margin: 13px 10px 0 390px;
+    border-radius: 5px;
+    outline: none;
+    float: left;
+    font: 600 14px DM Mono, monospace;
 }
 
 .botao_p img{
@@ -49,43 +69,52 @@ button{
 .card{
     display: inline-block;
     width: 45%;
-    height: 290px;
+    height: 195px;
     margin: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    background-color: #F7F4E9;
-    color: black;
-    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+    border: solid 1px rgb(192, 12, 39);
+    color: #8B9CA5;
+}
+
+.card ul{
+    margin: 15px 5px 0  10px;
+    float: left;
+    padding: 0px 0 0 8px;
+}
+
+.card li{
+    margin: 13px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card h1{
+    margin-right: 35px;
+    color: rgb(192, 12, 39);
 }
 
 .card img{
-    float: right;
-    height: 290px;
-}
-
-.card h4{
-    margin: 13px 0;
-    font: 600 14px DM Mono, monospace;
-}
-
-/* Caixa título(nome do atleta) */
-.caixa-titulo{
-    height: 47px;
-    width: 62%;
-    padding-top: 10px;
-    background-color: rgb(192, 12, 39);
-}
-
-/* Utilidades(editar-excluir) */
-.util{
     float: left;
-    height: 40px;
-    width: 58.6%;
+    border-radius: 50%;
+    height: 140px;
+    width: 25%;
+    margin: 10px 0 0 10px;
 }
 
-.util img{
-    float: right;
-    height: 30px;
-    margin: 5px 5px 0 0 ;
+.edita_exclui {
+  float: left;
+  width: 100%;
+  margin: 5px 0 0 180px;
 }
 
+.edita_exclui button{
+    height: 27px;
+    width: 20%;
+    font-size: 12px;
+    float: left;
+    margin: 0 0 0 5px;
+    background-color: rgb(115, 115, 136);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

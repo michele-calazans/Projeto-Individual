@@ -2,7 +2,7 @@
 .container-log{
     width: 80%;
     height: 500px;
-    margin-top: 85px;
+    margin-top: 95px;
     text-align: left;
     padding-top: 0;
     background-color: rgb(189, 14, 40);
@@ -28,7 +28,7 @@
 
 
 .form-class h1{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -42,4 +42,16 @@
 
 .left{
     padding:  0 0 0 0;
+}
+
+
+a{
+    margin-left: 15px;
+}
+
+.valida{
+    height: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 3px;
 }

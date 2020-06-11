@@ -2,7 +2,7 @@
 .container-cad{
     width: 80%;
     height: 600px;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: left;
     background-color: rgb(189, 14, 40);
     box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
@@ -39,39 +39,32 @@
     width: 50%;
     float: right;
     padding-left: 20px;
-    margin-top: 20PX
+    margin-top: 20px;
+}
+
+.form-class input, select, button{
+    height: 41px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-style: none;
+    outline-style: none;
 }
 
 .form-class input{
-    height: 41px;
     width: 85%;
-    float: center;
-    margin-top: 10px;
-    padding-left: 20px;
-    border-radius: 8px;
-    border-style: none;
-    outline-style: none;
 }
 
 .form-class select{
-    height: 41px;
     width: 44%;
-    float: center;
-    margin-top: 10px;
-    padding-left: 20px;
-    border-radius: 8px;
-    border-style: none;
-    outline-style: none;
 }
 
 .form-class button{
-    height: 40px;
     width: 44%;
     margin: 10px  0 0 0;
-    float: center;
-    border-radius: 8px;
-    border-style: none;
     font-weight: 700;
+    text-align: center;
+    padding: 0;
     color: #ffffff;
     background-color: rgb(57, 57, 78);
 }
