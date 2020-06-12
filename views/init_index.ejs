@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--CSS -->
+    <link type="text/css" rel="stylesheet" href="../style/global.css">
+    <link type="text/css" rel="stylesheet" href="../style/init.css">
+    <link type="text/css" rel="stylesheet" href="../responsive/resp-init.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../js/pesquisa_aproximada.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Team - Home</title>
+</head>
+<body>
+    <nav class="header">
+        <img src="../imgs/Logo/logo_of.png" alt="">
+        
+        <h2>Bem vinda, Michele.</h2>
+
+        <div class="botao_p">
+            <a href="/add" class="btn btn-sm btn-primary"><button>Cadastrar novo jogador</button></a>
+            <div class="resp-a">
+                <a href="../pages/dashboard.html"><img src="../imgs/icons/heart.svg" alt="Botão de pesquisa" id="search"></a>
+                <a href="../pages/login.html"><img src="../imgs/icons/logout.png" alt="Botão de logout" id="logout"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container" id="container">
+            <h2>Jogadores cadastrados</h2>
+            <input type="text" id="pesquisa" onkeyup="myFunction()" class="input_pesquisa" placeholder="🔎 Pesquisar jogador(a)">
+
+            <% jogadores.forEach(function(jogador){ %>
+
+                <div class="card">
+                    <img src="../Perfil-Jogador/<%= jogador.foto %>" alt=''>
+    
+                    <h1><span><%= jogador.nomeJogador %></span></h1>
+    
+                    <ul>
+                        <li> Idade: <%= jogador.idade %> anos</li>
+                        <li> Nacionalidade: <%= jogador.nacionalidade %></li>
+                        <li> Posição: <%= jogador.posicao %></li>
+                    </ul>
+    
+                    <ul> 
+                        <li> Clube: <%= jogador.clube %></li>
+                        <li> Seleção: <%= jogador.selecao %></li>
+                        <li> Meu Ranking: <%= jogador.nota %></li>
+                    </ul>
+    
+                    <div class="edita_exclui">
+                        <button> <a href="edit/<%= jogador.idJogador %>">Editar</a></button>
+                        <button> <a href="delete/<%= jogador.idJogador %>" >Excluir</a></button>
+                    </div>
+
+            </div>
+            <% }); %>
+
+        </div>
+    </div>
+</body>
+</html>

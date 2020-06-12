@@ -33,35 +33,35 @@
                         </div>
             </div>
 
-            <form class="form-class" onsubmit="valida_atleta()">
-                <input type="file" id="input_photo"/>
-                <input type="text" id="id_nome" placeholder="Nome do atleta" required/>
-                <input type="number" id="id_idade" placeholder="Idade" required/>
-                <input type="text" id="id_nacionalidade" placeholder="Nacionalidade" required/>
-                <input type="text" id="id_clube" placeholder="Clube" required/>
-                <input type="text" id="id_selecao" placeholder="Seleção" required/>
+            <form class="form-class" onsubmit="valida_atleta()" action="/save" method="post">
+                <input type="file" id="input_photo" name="id_foto"/>
+                <input type="text" id="id_nome" name="id_nome" placeholder="Nome do atleta" required/>
+                <input type="number" id="id_idade" name="id_idade" placeholder="Idade" required/>
+                <input type="text" id="id_nacionalidade" name="id_nacionalidade" placeholder="Nacionalidade" required/>
+                <input type="text" id="id_clube" name="id_clube" placeholder="Clube" required/>
+                <input type="text" id="id_selecao" name="id_selecao" placeholder="Seleção" required/>
 
-                <select name="ranking" id="ranking">
+                <select name="ranking_nota" id="ranking_nota">
                     <option value="" selected disabled>Nota</option>
-                    <option value="rank_1">Nota 1</option>
-                    <option value="rank_2">Nota 2</option>
-                    <option value="rank_3">Nota 3</option>
-                    <option value="rank_4">Nota 4</option>
-                    <option value="rank_5">Nota 5</option>
-                    <option value="rank_6">Nota 6</option>
-                    <option value="rank_7">Nota 7</option>
-                    <option value="rank_8">Nota 8</option>
-                    <option value="rank_9">Nota 9</option>
-                    <option value="rank_10">Nota 10</option>
+                    <option value="1">Nota 1</option>
+                    <option value="2">Nota 2</option>
+                    <option value="3">Nota 3</option>
+                    <option value="4">Nota 4</option>
+                    <option value="5">Nota 5</option>
+                    <option value="6">Nota 6</option>
+                    <option value="7">Nota 7</option>
+                    <option value="8">Nota 8</option>
+                    <option value="9">Nota 9</option>
+                    <option value="10">Nota 10</option>
                 </select>
 
                 <select name="position" id="position">
                     <option value="" selected disabled>Posição</option>
-                    <option value="p_oposto">Oposto(a)</option>
-                    <option value="p_levantador">Levantador(a)</option>
-                    <option value="p_ponteiro">Ponteiro(a)</option>
-                    <option value="p_libero">Líbero</option>
-                    <option value="p_central">Central</option>
+                    <option value="oposto(a)">Oposto(a)</option>
+                    <option value="levantador(a)">Levantador(a)</option>
+                    <option value="ponteiro(a)">Ponteiro(a)</option>
+                    <option value="libero">Líbero</option>
+                    <option value="central">Central</option>
                 </select>
 
                 <button id="button_cad" type="submit" onclick="envia_dados()">Cadastrar</button>
