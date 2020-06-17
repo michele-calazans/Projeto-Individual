@@ -17,14 +17,14 @@
 <body>
     <nav class="header">
         <img src="../imgs/Logo/logo_of.png" alt="">
-        
-        <h2>Bem vinda, Michele.</h2>
+        <h2>Olá, <%= nome %>.</h2>
+        <input type="hidden" value="<%= nome %>" id="nome" name="nome">
 
         <div class="botao_p">
-            <a href="/add" class="btn btn-sm btn-primary"><button>Cadastrar novo jogador</button></a>
+            <a href="/add"><button>Cadastrar novo jogador</button></a>
             <div class="resp-a">
-                <a href="../pages/dashboard.html"><img src="../imgs/icons/heart.svg" alt="Botão de pesquisa" id="search"></a>
-                <a href="../pages/login.html"><img src="../imgs/icons/logout.png" alt="Botão de logout" id="logout"></a>
+                <a href="/dashboard-rote"><img src="../imgs/icons/heart.svg" alt="Botão de pesquisa" id="search"></a>
+                <a href="/back-login" onclick="remove()"><img src="../imgs/icons/logout.png" alt="Botão de logout" id="logout"></a>
             </div>
         </div>
     </nav>
@@ -33,9 +33,15 @@
         <div class="container" id="container">
             <h2>Jogadores cadastrados</h2>
             <input type="text" id="pesquisa" onkeyup="myFunction()" class="input_pesquisa" placeholder="🔎 Pesquisar jogador(a)">
+            <!-- Nenhum registro -->
+            <% if (locals.empty) { %>
+               <div class="p_empty"><h3><%= empty %></h3></div>
+            <% } %>
 
+            <!-- Listando jogadores -->
             <% jogadores.forEach(function(jogador){ %>
-
+                <input type="hidden" value="<%= jogador.nota %>" id="nota" name="nota">
+                
                 <div class="card">
                     <img src="../Perfil-Jogador/<%= jogador.foto %>" alt=''>
     
@@ -54,14 +60,19 @@
                     </ul>
     
                     <div class="edita_exclui">
-                        <button> <a href="edit/<%= jogador.idJogador %>">Editar</a></button>
-                        <button> <a href="delete/<%= jogador.idJogador %>" >Excluir</a></button>
+                        <a href="edit/<%= jogador.idJogador %>">Editar</a>
+                        <a href="delete/<%= jogador.idJogador %>" onclick="valida_ex()">Excluir</a>
                     </div>
 
-            </div>
+                </div>
             <% }); %>
-
         </div>
     </div>
 </body>
 </html>
+
+<script>        
+    function valida_ex() {
+        alert("Jogador excluído");
+    }
+</script>

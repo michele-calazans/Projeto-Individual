@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="header">
-        <h3>Baseado no que você mais gosta</h3>
+       <i></i><h3>Baseado no que você mais gosta </h3></i>
         <div class="buttons botao_p">
-            <a href="../pages/init.html">
+            <a href="/back-init">
                 <img src="../imgs/icons/arrow.svg" alt="Botão de pesquisa" id="search"> 
             </a>
         </div>
@@ -23,10 +23,11 @@
 
     <div class="main">
         <div class="div-center">
+            <% favoritos.forEach(function(favorito){ %>
                 <div class="card c_um">
                     <h2>Posição mais popular</h2>
 
-                        <h1>PONTA</h1>
+                        <h1><i><%= favorito.posicao %></i></h1>
 
                         <img src="../imgs/icons/volleyball.svg" alt="Bola de vôlei">
                 </div>
@@ -34,7 +35,7 @@
                 <div class="card c_dois">
                     <h2>Seleção mais popular</h2>
 
-                        <h1>BRASIL</h1>
+                        <h1><i><%= favorito.selecao %></i></h1>
 
                         <img src="../imgs/icons/flag.svg" alt="">
                 </div>
@@ -42,7 +43,7 @@
                 <div class="card c_tres">
                     <h2>Melhor jogador(a)</h2>
 
-                        <h1>NISHIDA</h1>
+                        <h1><i><%= favorito.nomeJogador %></i></h1>
 
                         <img src="../imgs/icons/medal.svg" alt="">
                 </div>
@@ -50,11 +51,12 @@
                 <div class="card c_quatro">
                     <h2>Média das notas no ranking</h2>
 
-                        <h1>8.90</h1>
+                        <h1><i><%= favorito.media %></i></h1>
 
 
                         <img src="../imgs/icons/podium.svg" alt="">
                 </div>
+                <% }); %>
         </div>        
     </div>
 </body>

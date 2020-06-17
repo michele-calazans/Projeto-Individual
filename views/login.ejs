@@ -23,13 +23,20 @@
                 <img src="../imgs/Logo/logo_of.png" alt="">
             </div>
             
-            <form action="" class="form-class">
+            <form action="/autenticar" method="post" class="form-class" autocomplete="off">
                 <h1>Faça seu login</h1>
-                <input type="text" id="id_user" placeholder="Usuário" required/>
-                <input type="password" id="id_pass" placeholder="Senha" required/>
+                <div id="mensagemErro" class="erro">
+                    <% if (locals.erros) { %>
+                        <div class="erro">
+                            <%= erros %>
+                        </div>
+                    <% } %>
+                </div>
+                <input type="text" id="id_user" name="id_user" placeholder="Usuário" required/>
+                <input type="password" id="id_pass" name="id_pass" placeholder="Senha" required/>
        
-                <button id="button_login" type="submit">Entrar</button>
-                <a href="../pages/add-user.html">Não possui cadastro?</a>
+                <button id="button_login" type="submit" onclick="cria()">Entrar</button></a>
+                <a href="/add-usuario">Não possui cadastro?</a>
             </form>
         </div>
     </div>

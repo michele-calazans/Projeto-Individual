@@ -16,7 +16,7 @@
                 <h1>Edição de jogadores</h1>
                     <p></p>
                         <div class="a-back">
-                            <a href="../pages/init.html" >
+                            <a href="/back-init" >
                                 <object data="../imgs//icons/left-arrow.svg" type="image/svg+xml"></object>Voltar à tela de início
                             </a>
                         </div>
@@ -29,40 +29,73 @@
             <form action="/update" method="post" class="form-class">
                 <input type="hidden" value="<%= jogador.idJogador %>" name="idJogador"/>
 
-                <input type="file" id="input_photo" value="<%= jogador.foto %>"/>
+                <input type="file" id="input_photo" name="id_foto" onchange="mostraImagem(event)"/>
+    
+                <img id="foto_escolhida" class="foto-escolhida" src="../Perfil-Jogador/<%= jogador.foto %>">
+
+                <label for="input_photo" class="label-img"><img src="../imgs/icons/image.svg"></label>
+
                 <input type="text" id="id_nome" name="id_nome" placeholder="Nome do atleta" value="<%= jogador.nomeJogador %>" required/>
                 <input type="number" id="id_idade"  name="id_idade" placeholder="Idade" value="<%= jogador.idade %>"/>
                 <input type="text" id="id_nacionalidade" name="id_nacionalidade" placeholder="Nacionalidade" value="<%= jogador.nacionalidade %>" required/>
                 <input type="text" id="id_clube" name="id_clube" placeholder="Clube"  value="<%= jogador.clube %>" required/>
                 <input type="text" id="id_selecao" name="id_selecao" placeholder="Seleção" value="<%= jogador.selecao %>" required/>
 
-                <select name="ranking_nota" id="ranking_nota" value="<%= jogador.nota %>">
-                        <option value="" selected disabled>Nota</option>
-                        <option value="1">Nota 1</option>
-                        <option value="2">Nota 2</option>
-                        <option value="3">Nota 3</option>
-                        <option value="4">Nota 4</option>
-                        <option value="5">Nota 5</option>
-                        <option value="6">Nota 6</option>
-                        <option value="7">Nota 7</option>
-                        <option value="8">Nota 8</option>
-                        <option value="9">Nota 9</option>
-                        <option value="10">Nota 10</option>
+                <select name="ranking_nota" id="ranking_nota">
+                        <option value="<%= jogador.nota %>" id="param_n" selected disabled>Nota</option>
+                        <option value="1" id="op1">Nota 1</option>
+                        <option value="2" id="op2">Nota 2</option>
+                        <option value="3" id="op3">Nota 3</option>
+                        <option value="4" id="op4" >Nota 4</option>
+                        <option value="5" id="op5">Nota 5</option>
+                        <option value="6" id="op6">Nota 6</option>
+                        <option value="7" id="op7">Nota 7</option>
+                        <option value="8" id="op8">Nota 8</option>
+                        <option value="9" id="op9">Nota 9</option>
+                        <option value="10" id="op10">Nota 10</option>
                     </select>
     
-                    <select name="position" id="select_position" value="<%= jogador.posicao %>">
-                        <option value="" selected disabled>Posição</option>
-                        <option value="oposto">Oposto(a)</option>
-                        <option value="levantador">Levantador(a)</option>
-                        <option value="ponteiro">Ponteiro(a)</option>
-                        <option value="libero">Líbero</option>
-                        <option value="central">Central</option>
+                    <select name="position" id="select_position" >
+                        <option value="<%= jogador.posicao %>" id="param_p" selected disabled >Posição</option>
+                        <option value="Oposto(a)" id="Oposto(a)">Oposto(a)</option>
+                        <option value="Levantador(a)" id="Levantador(a)">Levantador(a)</option>
+                        <option value="Ponteiro(a)" id="Ponteiro(a)">Ponteiro(a)</option>
+                        <option value="Líbero" id="Líbero">Líbero</option>
+                        <option value="Central" id="Central">Central</option>
                     </select>
 
-                <button id="button_cad" type="submit">Editar</button>
-                <button id="button_cancell" >Cancelar</button>
+                <button id="button_cad" type="submit" onclick="verifica()">Editar</button>
             </form>
         </div>
     </div>
 </body>
 </html>
+
+
+<script>
+        //Selecionando a nota do jogador
+        let valor_n =  Number(param_n.value);
+        console.log(valor_n);
+        document.getElementById(`op${valor_n}`).selected = true;
+
+        //Selecionando a posição do jogador
+        let valor_p =  param_p.value;
+        console.log(valor_p);
+        document.getElementById(`${valor_p}`).selected = true;
+
+
+        function mostraImagem(event){
+            if(event.target.files.length > 0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("foto_escolhida");
+                preview.src = src;
+                preview.style.display = "block";
+            }
+        }
+
+        
+        function verifica() {
+            alert("Editado com sucesso");
+        }
+
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  CSS -->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/add-alter.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/add-user.css">
+    <link rel="stylesheet" href="../responsive/resp-login.css">
+
+    <!-- JS -->
+    <script src="../js/validacoes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Team - Cadastro</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container container-log">
+
+            <div class="left">
+                    <div class="logo-login">
+                        <img src="../imgs/wallpp/male.jpg" alt="">
+                    </div>
+            </div>
+
+            <div class="logo-img">
+                <img src="../imgs/Logo/logo_of.png" alt="">
+            </div>
+            
+            <form class="form-class" onsubmit="valida()" method="post" action="/save_user" autocomplete="off">
+                <h1>Faça seu cadastro</h1>
+                <div id="mensagemErro" class="erro">
+                </div>
+                <input type="text" id="id_name_user" name="id_name_user" placeholder="Nome" required/>
+                <input type="text" id="id_user" name="id_user" placeholder="Nome de usuário" required/>
+                <input type="password" id="id_pass" name="id_pass" placeholder="Senha" required/>
+                <input type="password" id="id_pass_confirm" name="id_pass_confirm" placeholder="Confirmar senha" required/>
+       
+                <button id="button_login" type="submit">Cadastrar</button>
+                <a href="/back-login">Já possui uma conta?</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function valida() {
+        if(id_pass.value != id_pass_confirm.value){
+            mensagemErro.innerHTML = "As senhas não conferem";
+            event.preventDefault();
+        }
+    }
+</script>

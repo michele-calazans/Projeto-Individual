@@ -23,7 +23,7 @@
                 <h1>Cadastro de jogadores</h1>
                     <p>Cadastre os seus jogadores favoritos e forme o seu time dos sonhos.</p>
                         <div class="a-back">
-                            <a href="../pages/init.html" >
+                            <a href="/back-init" >
                                 <object data="../imgs/icons/left-arrow.svg" type="image/svg+xml"></object>Voltar a tela de início
                             </a>
                         </div>
@@ -33,15 +33,21 @@
                         </div>
             </div>
 
-            <form class="form-class" onsubmit="valida_atleta()" action="/save" method="post">
-                <input type="file" id="input_photo" name="id_foto"/>
+            <form class="form-class" action="/save" method="post" autocomplete="off">
+
+                <input type="file" id="input_photo" name="id_foto" onchange="mostraImagem(event)"/>
+    
+                <img id="foto_escolhida" class="foto-escolhida">
+
+                <label for="input_photo" class="label-img"><img src="../imgs/icons/image.svg"></label>
+
                 <input type="text" id="id_nome" name="id_nome" placeholder="Nome do atleta" required/>
                 <input type="number" id="id_idade" name="id_idade" placeholder="Idade" required/>
                 <input type="text" id="id_nacionalidade" name="id_nacionalidade" placeholder="Nacionalidade" required/>
                 <input type="text" id="id_clube" name="id_clube" placeholder="Clube" required/>
                 <input type="text" id="id_selecao" name="id_selecao" placeholder="Seleção" required/>
 
-                <select name="ranking_nota" id="ranking_nota">
+                <select name="ranking_nota" id="ranking_nota" required>
                     <option value="" selected disabled>Nota</option>
                     <option value="1">Nota 1</option>
                     <option value="2">Nota 2</option>
@@ -55,19 +61,33 @@
                     <option value="10">Nota 10</option>
                 </select>
 
-                <select name="position" id="position">
+                <select name="position" id="position" required>
                     <option value="" selected disabled>Posição</option>
-                    <option value="oposto(a)">Oposto(a)</option>
-                    <option value="levantador(a)">Levantador(a)</option>
-                    <option value="ponteiro(a)">Ponteiro(a)</option>
-                    <option value="libero">Líbero</option>
-                    <option value="central">Central</option>
+                    <option value="Oposto(a)">Oposto(a)</option>
+                    <option value="Levantador(a)">Levantador(a)</option>
+                    <option value="Ponteiro(a)">Ponteiro(a)</option>
+                    <option value="Líbero">Líbero</option>
+                    <option value="Central">Central</option>
                 </select>
 
-                <button id="button_cad" type="submit" onclick="envia_dados()">Cadastrar</button>
-                <button class="button_cancell" id="button_cancell" type="submit">Cancelar</button>
+                <button id="button_cad" type="submit" onclick="verifica()">Cadastrar</button>
             </form>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+function mostraImagem(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("foto_escolhida");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+}
+
+function verifica() {
+    alert("Jogador cadastrado com sucesso")
+}
+</script>

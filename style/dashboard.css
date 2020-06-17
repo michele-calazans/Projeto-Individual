@@ -4,6 +4,11 @@
     color: rgb(240, 25, 57);
 }
 
+h1, h2, h3{
+    font-weight: 400;
+}
+
+
  /* Header e suas configurções - Início*/
 .header{
     height: 80px;
@@ -21,11 +26,11 @@
 
 .buttons{
     float: right;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-right: 60px;
 }
 .buttons img{
-    height: 35px;
+    height: 30px;
     float: left;
     border-style: solid;
     border-radius: 3px;
@@ -53,33 +58,42 @@
     text-align: center;
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
 }
+.card h1{
+    color: #f6f3f3;
+}
 
 .card h2{
     margin-top: 15px;
-    color: rgb(250, 248, 235);
+    color: rgb(230, 230, 230);
 }
     .c_um{
-        background-color: #3CBCC3;
+        background-color: rgb(192, 12, 39);;
     }
 
     .c_dois{
-        background-color: #EBA63F;
+        background-color: #423f3f;
     }
 
     .c_tres{
-        background-color: #E40C2B;
+        background-color: #423f3f;
     }
 
     .c_quatro{
-        background-color: #438945;
+        background-color: rgb(192, 12, 39);;
     }
 
 .card img{
-    height: 90px;
-    margin-top: 10px;
+    height: 85px;
+    margin-top: 15px;
 }
 /* Div cards - Início*/
 
+hr{
+    display: block;
+    width: 42%;
+    margin: 5px 0 0 90px;
+    border: solid 2px rgb(192, 12, 39);
+}
 
  /* Imagem da esquerda - Início*/
 .ilustrate img{
