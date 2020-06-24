@@ -35,11 +35,11 @@
 
                 <label for="input_photo" class="label-img"><img src="../imgs/icons/image.svg"></label>
 
-                <input type="text" id="id_nome" name="id_nome" placeholder="Nome do atleta" value="<%= jogador.nomeJogador %>" required/>
-                <input type="number" id="id_idade"  name="id_idade" placeholder="Idade" value="<%= jogador.idade %>"/>
-                <input type="text" id="id_nacionalidade" name="id_nacionalidade" placeholder="Nacionalidade" value="<%= jogador.nacionalidade %>" required/>
-                <input type="text" id="id_clube" name="id_clube" placeholder="Clube"  value="<%= jogador.clube %>" required/>
-                <input type="text" id="id_selecao" name="id_selecao" placeholder="Seleção" value="<%= jogador.selecao %>" required/>
+                <input type="text" id="id_nome" name="id_nome" placeholder="Nome do atleta" value="<%= jogador.nomeJogador %>" maxlength="45" required/>
+                <input type="number" id="id_idade"  name="id_idade" placeholder="Idade" value="<%= jogador.idade %>" maxlength="3" required/>
+                <input type="text" id="id_nacionalidade" name="id_nacionalidade" placeholder="Nacionalidade" value="<%= jogador.nacionalidade %>" maxlength="35" required/>
+                <input type="text" id="id_clube" name="id_clube" placeholder="Clube"  value="<%= jogador.clube %>" maxlength="35" required/>
+                <input type="text" id="id_selecao" name="id_selecao" placeholder="Seleção" value="<%= jogador.selecao %>"  maxlength="35" required/>
 
                 <select name="ranking_nota" id="ranking_nota">
                         <option value="<%= jogador.nota %>" id="param_n" selected disabled>Nota</option>

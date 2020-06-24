@@ -62,11 +62,18 @@
 
     .card h1{
         margin-right: 55px;
-        font-size: 24px;
+        font-size: 21px;
+    }
+
+    .card li {
+        margin: 13px 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
     }
 
     .edita_exclui {
-        margin: 5px 0 0 67px;
+        margin: 23px 0 0 82px;
     }
 
     .edita_exclui button{
@@ -77,6 +84,10 @@
 
 @media screen and (min-width: 321px) and (max-width:375px)
 {
+    body{
+        overflow-x: hidden;
+    }
+
     .header img{
         height: 70px;
         margin: 10px 0 0 5px;
@@ -144,7 +155,7 @@
     }
 
     .edita_exclui {
-        margin: 5px 0 0 67px;
+        margin: 19px 0 0 89px;
     }
 
     .edita_exclui button{
@@ -222,9 +233,9 @@
         font-size: 12px;
     }
 
-    .edita_exclui {
-        margin: 5px 0 0 67px;
-    }
+        .edita_exclui {
+            margin: 18px 0 0 97px;
+        }
 
     .edita_exclui button{
         width: 25%;

@@ -32,10 +32,10 @@
                 <h1>Faça seu cadastro</h1>
                 <div id="mensagemErro" class="erro">
                 </div>
-                <input type="text" id="id_name_user" name="id_name_user" placeholder="Nome" required/>
-                <input type="text" id="id_user" name="id_user" placeholder="Nome de usuário" required/>
-                <input type="password" id="id_pass" name="id_pass" placeholder="Senha" required/>
-                <input type="password" id="id_pass_confirm" name="id_pass_confirm" placeholder="Confirmar senha" required/>
+                <input type="text" id="id_name_user" name="id_name_user" placeholder="Nome" maxlength="30"  required/>
+                <input type="text" id="id_user" name="id_user" placeholder="Nome de usuário" maxlength="20" required/>
+                <input type="password" id="id_pass" name="id_pass" placeholder="Senha" maxlength="20" required/>
+                <input type="password" id="id_pass_confirm" name="id_pass_confirm" maxlength="20" placeholder="Confirmar senha" required/>
        
                 <button id="button_login" type="submit">Cadastrar</button>
                 <a href="/back-login">Já possui uma conta?</a>
